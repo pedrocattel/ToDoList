@@ -15,27 +15,32 @@ int main()
     cout << "Bem vindo ao Cttl Todolist\n";
     cout << "-----------------------------\n";
     printMenu();
-
+    criaTask();
     cin >> item;
-    do
+    while (i != 1)
     {
         switch (item)
         {
         case 1:
             exibeLista();
+            cin >> item;
             break;
         case 2:
             criaTask();
+            cin >> item;
             break;
         case 3:
 
             break;
         case 4:
-            i == 1;
+            i = 1;
             break;
+        default:
+            cout << "Digite um valor valido";
+            exibeLista();
         }
-        return 0;
-    }while(i != 1);
+    }
+    return 0;
 }
 
 
@@ -49,7 +54,6 @@ void criaTask ()
     arquivout.open("lista.txt", std::ios_base::app);
     arquivout << task;
     arquivout.close();
-
 }
 
 void exibeLista()
@@ -66,10 +70,11 @@ void exibeLista()
 
 void printMenu()
 {
+    cout << "-----------------------------\n";
     cout << "1. Exibir Lista\n";
     cout << "2. Adicionar tarefa\n";
     cout << "1. Remover tarefa\n";
     cout << "4. Fechar programa\n";
     cout << "-----------------------------\n";
-    cout << "Digite a ação desejada! \n";
+    cout << "Escolha um item! \n";
 }
