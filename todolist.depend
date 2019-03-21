@@ -1,6 +1,14 @@
 # depslib dependency file v1.0
-1552997197 source:c:\users\pedro\documents\projetos\c++\todolist\main.cpp
+1553171627 source:c:\users\pedro\documents\projetos\c++\todolist\main.cpp
 	<iostream>
 	<string>
 	<fstream>
+
+1553171424 c:\users\pedro\documents\projetos\c++\todolist\taskmanager.h
+
+1553171362 source:c:\users\pedro\documents\projetos\c++\todolist\taskmanager.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"taskmanager.h"
 
